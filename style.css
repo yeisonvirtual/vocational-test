@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  /*border-style: solid;*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+/* TITLE */
+h2 {
+  text-align: center;
+  background-color: #13aa52;
+  padding: 10px;
+}
+
+/* CONTAINER QUIESTIONS AND ANSWER */
+.container {
+  margin: 30px;
+}
+
+/* QUESTION */
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* QUESTION */
+h3 {
+  margin-bottom: 20px;
+}
+
+/* ANSWER */
+
+/* DIV */
+.option {
+  display: flex;
+  align-items: center;
+ }
+
+input {
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* BUTTON */
+button {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  width: 200px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 10px 30px;
+  }
+}
+
+/*
+button {
+  display: flex;
+  padding: 10px;
+  border: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(248, 33, 33);
+  color: white;
+  cursor: pointer;
+}
+*/
