@@ -65,7 +65,7 @@ class HandlerDOM {
     return this.careers;
   }
 
-  getQuiestions(){
+  getQuestions(){
     return this.questions;
   }
 
@@ -180,7 +180,13 @@ class HandlerDOM {
       console.log(this.careers);
       
       div.innerHTML = 
-      `<h3>Felicidades ya terminó!</h3>
+      `
+      <h2 class="message">Felicidades ya terminó!</h2>
+      <div class="results">
+        <h2>Resultado:</h2>
+        <p class="result">1. ${this.careers[0].name} con un total de ${this.careers[0].value} puntos</p>
+        <p class="result">2. ${this.careers[1].name} con un total de ${this.careers[1].value} puntos</p>
+      <div>
       `;
       btnReset.innerText = 'Volver'
 
@@ -242,7 +248,6 @@ class HandlerDOM {
   }
 
 }
-
 
 // CAREERS
 let careers = [
