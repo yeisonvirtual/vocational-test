@@ -259,6 +259,11 @@ let careers = [
 ];
 
 // QUESTIONS
+// 0 -> Informatica
+// 1 -> Arquitectura
+// 2 -> Psicologia
+// 3 -> Pedagogia
+// 4 -> Derecho
 const questions = [
   new Question(
     '¿Te gustan salir con tus amigos de fiesta?',
@@ -266,13 +271,6 @@ const questions = [
     'No, prefiero una reunión tranquila.',
     [1,2,3,4], // arq, psico, pedago, derecho
     [0] // infor
-  ),
-  new Question(
-    '¿En qué área te consideras mejor?',
-    'Matemáticas.',
-    'Inglés.',
-    [0,1], // infor, arq
-    [2,3,4] // psico, pedago, derecho
   ),
   new Question(
     '¿Eres bueno con la tecnología?',
@@ -289,11 +287,23 @@ const questions = [
     [0,2,4] // infor, psico, derecho
   ),
   new Question(
-    '¿Te gustan contruir cosas?',
+    '¿Tiene capacidad de diseño y creatividad?',
     'Sí, me gusta usar mi creatividad.',
-    'No me llama la atención.',
-    [0,1,3], // infor, arq, pedago
-    [2,4] // psico, derecho
+    'No me considero una persona creativa.',
+    [0,1] // arq, pedago
+  ),
+  new Question(
+    '¿En qué área te consideras mejor?',
+    'Matemáticas.',
+    'Inglés.',
+    [0,1], // infor, arq
+    [2,3,4] // psico, pedago, derecho
+  ),
+  new Question(
+    '¿Te consideras una persona paciente?',
+    'Sí, soy muy paciente.',
+    'No soy nada paciente.',
+    [2], // pedago
   ),
   new Question(
     '¿Te gustan mantener todo en orden?',
@@ -311,7 +321,20 @@ const questions = [
     '¿Eres bueno explicando cosas?',
     'Sí, me considero bueno explicando temas.',
     'No soy muy bueno hablando.',
-    [3], // pedago
+    [3,4], // pedago, derech
+  ),
+  new Question(
+    '¿Te gusta defender a los que no pueden defenderse?',
+    'Sí, siempre que puedo lo hago.',
+    'No suelo tomar la iniciativa.',
+    [4], // dere
+    [0] // infor
+  ),
+  new Question(
+    '¿Te llama la atencion el desarrollo de aplicaciones?',
+    'Sí, es bastante interesante.',
+    'No me llama la atencion.',
+    [0], // infor
   ),
 ];
 
